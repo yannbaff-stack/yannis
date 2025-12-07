@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Discussion WhatsApp avec Dette Yannis</title>
+  <style>
+    :root {
+      --wa-green: #128c7e;
+      --wa-dark: #075e54;
+      --wa-light: #d9fdd3;
+      --bubble-other: #ffffff;
+      --bg: #e5ddd5;
+      --text: #111b21;
+      --muted: #667781;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      padding: 0;
+    }
+    .page {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    header {
+      background: linear-gradient(135deg, var(--wa-dark), var(--wa-green));
+      color: white;
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+    header .title { font-size: 20px; font-weight: 600; }
+    .btn {
+      background: white;
+      color: var(--wa-dark);
+      padding: 8px 14px;
+      border-radius: 16px;
+      text-decoration: none;
+      font-weight: 600;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+    main { padding: 20px 14px 40px; }
+    .chat {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .message { width: 100%; display: flex; }
+    .message .bubble {
+      max-width: 72%;
+      padding: 10px 12px;
+      border-radius: 12px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+      background: var(--bubble-other);
+      position: relative;
+      overflow: hidden;
+    }
+    .message.me { justify-content: flex-end; }
+    .message.me .bubble { background: var(--wa-light); }
+    .meta { font-size: 12px; color: var(--muted); margin-bottom: 6px; display: flex; gap: 8px; }
+    .sender { font-weight: 600; }
+    .text { line-height: 1.45; white-space: pre-wrap; }
+    .time { margin-left: auto; }
+    .attachment { margin-top: 8px; }
+    .attachment img, .attachment video { max-width: 100%; border-radius: 10px; display: block; }
+    .attachment audio { width: 100%; }
+    .attachment a { color: var(--wa-dark); font-weight: 600; text-decoration: none; }
+    .attachment a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="title">Discussion WhatsApp avec Dette Yannis</div>
+      <a class="btn" href="conversation.pdf" download>Télécharger en PDF</a>
+    </header>
+    <main>
+      <div class="chat">
+        
+        <div class="message other">
+            <div class="bubble">
+                <div class="meta"><span class="sender">Système</span> <span class="time">18:01</span></div>
+                <div class="text">Les messages et les appels sont chiffrés de bout en bout. Seules les personnes prenant part à cette discussion peuvent les lire, les écouter ou les partager. En savoir plus.</div>
+                
+            </div>
+        </div>
+        
+
+        <div class="message other">
+            <div class="bubble">
+                <div class="meta"><span class="sender">Système</span> <span class="time">18:01</span></div>
+                <div class="text">Vous avez créé ce groupe</div>
+                
+            </div>
+        </div>
+        
+
+        <div class="message me">
+            <div class="bubble">
+                <div class="meta"><span class="sender">Yannick</span> <span class="time">18:01</span></div>
+                <div class="text">Bon Marco je vais encore avoir besoin de toi</div>
+                
+            </div>
+        </div>
+        
+
+        <div class="message me">
+            <div class="bubble">
+                <div class="meta"><span class="sender">Yannick</span> <span class="time">18:02</span></div>
+                <div class="text">Yannis n&#x27;est pas &quot;chaud&quot; pour mettre à l&#x27;écrit qu&#x27;il me doit des sous</div>
+                
+            </div>
+        </div>
+        
+
+        <div class="message me">
+            <div class="bubble">
+                <div class="meta"><span class="sender">Yannick</span> <span class="time">18:03</span></div>
+                <div class="text">‎IMG-20250530-WA0009.jpg (fichier joint)<br>Voilà dans le cas où la chambre est à 960 j’ai baissé de 50 ça fait ça actuellement !</div>
+                <div class="attachment"><img src="IMG-20250530-WA0009.jpg" alt="IMG-20250530-WA0009.jpg"></div>
+            </div>
+        </div>
+        
+
+        <div class="message me">
+            <div class="bubble">
+                <div class="meta"><span class="sender">Yannick</span> <span class="time">18:04</span></div>
+                <div class="text">Il remet également en question le montant...</div>
+                
+            </div>
+        </div>
+        
+
+        <div class="message me">
+            <div class="bubble">
+                <div class="meta"><span class="sender">Yannick</span> <span class="time">18:04</span></div>
+                <div class="text">Moi je peux plus</div>
+                
+            </div>
+        </div>
+        
+
+        <div class="message other">
+            <div class="bubble">
+                <div class="meta"><span class="sender">Marco Marco</span> <span class="time">18:15</span></div>
+                <div class="text">Il faut résoudre le sujet les gars.<br>Yannick annonce un montant de 3180e<br>Yannis toi quel est le montant que t&#x27;avais en tête ?<br>Si vous ne le mettais pas par écrit c&#x27;est sur que tu ne seras pas rassuré Yannick mais le plus important c&#x27;est que tu sois remboursé.<br>Il faut prévoir des mensualités tous les mois et donc 10mois on en parle plus.<br>Yannis essais de faire le nécessaire pour rassurer Yannick et prévoir un budget tous les mois que tu lui verses.<br>J&#x27;ai pas envie que ça finisse mal cette histoire les gars faites ce qu&#x27;il faut.</div>
+                
+            </div>
+        </div>
+        
+
+        <div class="message other">
+            <div class="bubble">
+                <div class="meta"><span class="sender">Marco Marco</span> <span class="time">18:21</span></div>
+                <div class="text">Mais en vrai Yannis,<br>Yannick a peur de se prendre un douille mais je sais que tu lui mettras pas a l&#x27;envers donc si t&#x27;as du mal a payer un contrat de dette ça rassurera Yannick, ça dit juste que tu lui doit de l&#x27;argent donc si tu compte le rembourser ça changera rien pour toi et vous mettez le délais que vous souhaitez pour le remboursement.<br>Et je pense que ça apaisera les tensions.</div>
+                
+            </div>
+        </div>
+        
+
+        <div class="message other">
+            <div class="bubble">
+                <div class="meta"><span class="sender">Marco Marco</span> <span class="time">18:21</span></div>
+                <div class="text">Après vous faite ce que vous voulez moi je vous demande juste que ça soit réglo</div>
+                
+            </div>
+        </div>
+        
+
+        <div class="message me">
+            <div class="bubble">
+                <div class="meta"><span class="sender">Yannick</span> <span class="time">18:47</span></div>
+                <div class="text">C&#x27;est grave Marco quand j&#x27;y pense.<br>Quand je lui ai fait confiance pour contacter l&#x27;agence il ne m&#x27;a jamais dit que ça n&#x27;avait pas marché, j&#x27;ai dû m&#x27;en apercevoir par moi même, aujourd&#x27;hui il me dit qu&#x27;il ne veut pas de contrat de dette parce qu&#x27;il n&#x27;apparaît pas sur le bail</div>
+                
+            </div>
+        </div>
+        
+
+        <div class="message me">
+            <div class="bubble">
+                <div class="meta"><span class="sender">Yannick</span> <span class="time">18:48</span></div>
+                <div class="text">Franchement Yannis j&#x27;ai besoin de ce contrat j&#x27;ai plus confiance</div>
+                
+            </div>
+        </div>
+        
+
+        <div class="message me">
+            <div class="bubble">
+                <div class="meta"><span class="sender">Yannick</span> <span class="time">18:48</span></div>
+                <div class="text">Et non ça ne se règlera pas entre nous 2</div>
+                
+            </div>
+        </div>
+        
+
+        <div class="message other">
+            <div class="bubble">
+                <div class="meta"><span class="sender">Marco Marco</span> <span class="time">20:24</span></div>
+                <div class="text">@⁨Yannis Goubet⁩ exprime ton point de vu je ne suis pas au courant de tout mais vous êtes 2 de mes meilleurs amis ça me pèse cette histoire et je me sens aussi responsable donc s&#x27;il vous plaît arranger moi ça.<br>Si c&#x27;est compliqué pour toi Yannis tu fais des mensualités de 100e tous les mois et ça prendra plus de 2 ans mais au moins ça sera carré</div>
+                
+            </div>
+        </div>
+        
+
+        <div class="message other">
+            <div class="bubble">
+                <div class="meta"><span class="sender">Yannis Goubet</span> <span class="time">21:33</span></div>
+                <div class="text">Oui je comprends, j’aimerai bien tout d’un coup, mais ça je peux que des petites sommes pour l’instant</div>
+                
+            </div>
+        </div>
+        
+
+        <div class="message me">
+            <div class="bubble">
+                <div class="meta"><span class="sender">Yannick</span> <span class="time">21:39</span></div>
+                <div class="text">Tu aimerais partir sur des mensualités de combien ?</div>
+                
+            </div>
+        </div>
+        
+
+        <div class="message me">
+            <div class="bubble">
+                <div class="meta"><span class="sender">Yannick</span> <span class="time">22:09</span></div>
+                <div class="text">Je tiens à preciser que tu m’as versé 300e.<br>(je precise pour ne pas créer d&#x27;ambiguïté) &lt;Ce message a été modifié&gt;</div>
+                
+            </div>
+        </div>
+        
+
+        <div class="message other">
+            <div class="bubble">
+                <div class="meta"><span class="sender">Yannis Goubet</span> <span class="time">22:38</span></div>
+                <div class="text">Yes je pourrais faire 200e</div>
+                
+            </div>
+        </div>
+        
+
+        <div class="message me">
+            <div class="bubble">
+                <div class="meta"><span class="sender">Yannick</span> <span class="time">23:06</span></div>
+                <div class="text">Bon si on se fixe les 5 premiers jours de chaque mois ça te va ?</div>
+                
+            </div>
+        </div>
+        
+
+        <div class="message other">
+            <div class="bubble">
+                <div class="meta"><span class="sender">Yannis Goubet</span> <span class="time">12:16</span></div>
+                <div class="text">Oui</div>
+                
+            </div>
+        </div>
+        
+
+        <div class="message me">
+            <div class="bubble">
+                <div class="meta"><span class="sender">Yannick</span> <span class="time">21:31</span></div>
+                <div class="text">Okay 200e le 1-5 de chaque mois c&#x27;est good ça me va, en virement instantané si possible stp.<br><br>Est-ce que je peux te proposer de le mettre par ecrit comme ça c&#x27;est carré et on fait les choses bien stp ?</div>
+                
+            </div>
+        </div>
+        
+
+        <div class="message me">
+            <div class="bubble">
+                <div class="meta"><span class="sender">Yannick</span> <span class="time">21:41</span></div>
+                <div class="text">Je peux te l&#x27;envoyer puis tu nous fait un retour ?</div>
+                
+            </div>
+        </div>
+        
+
+        <div class="message me">
+            <div class="bubble">
+                <div class="meta"><span class="sender">Yannick</span> <span class="time">21:41</span></div>
+                <div class="text">Ça sera à peut pres ce qu&#x27;on s&#x27;est dit</div>
+                
+            </div>
+        </div>
+        
+
+        <div class="message me">
+            <div class="bubble">
+                <div class="meta"><span class="sender">Yannick</span> <span class="time">10:10</span></div>
+                <div class="text">Bonjour Yannis,<br>J&#x27;espère que tu comprends pourquoi je souhaite mettre ce qu&#x27;on s&#x27;est dit à l&#x27;écrit.<br>Tu nous prouve une fois de plus que tu arrêtes de répondre quand le sujet est sérieux.</div>
+                
+            </div>
+        </div>
+        
+
+        <div class="message me">
+            <div class="bubble">
+                <div class="meta"><span class="sender">Yannick</span> <span class="time">10:10</span></div>
+                <div class="text">Pourtant tu as vu le message il y a 2 jours</div>
+                
+            </div>
+        </div>
+        
+      </div>
+    </main>
+  </div>
+</body>
+</html>
